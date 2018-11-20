@@ -1,0 +1,418 @@
+<!doctype html>
+<html>
+  <head>
+    <title>UI Designer | UX Designer | UI Developer | Jagarapu Srinivas</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <!--End Bootstrap CSS-->
+    <!--Custome CSS-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/blogstyle.css"/>
+    <!--End Custome CSS-->
+    <!--JQuery Main-->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <!--End JQuery-->
+    <!--Fixed Header Animation-->
+    <script src="js/fixedheader.js"></script>
+      <script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+    <!--End Header Animation-->
+    <!--Scroll Top-->
+     <script type="text/javascript">
+			$(document).ready(function(){ 
+			
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			}); 
+			
+			$('.scrollup').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+ 
+		});
+		</script>
+    <!--End Scroll Top-->
+  </head>
+  <body>
+    <!--Header Section-->
+     <header>
+      <div class="container clearfix">
+       <!--Logo Section-->
+       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 float">
+         <a href="#"><div class="logo">
+         <h1>js</h1>
+          </div></a>
+       </div>
+       <!--End Logo-->
+       <!--Navigation Section-->
+       <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 float">
+         <nav>
+           <ul class="deskmenu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="featured.html">Featured</a></li>
+            <li><a href="digitalmarket.html">Digital Marketing</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           </ul>
+         </nav>
+         <div class="togglemenu">
+             <a href="#menu" id="toggle"><span></span></a>
+               <div id="menu">
+                 <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="featured.html">Featured</a></li>
+                    <li><a href="digitalmarket.html">Digital Marketing</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+           </div>
+         </div>
+       </div>
+       <!--End Navigation-->
+       <!--Socail Section-->
+       <div class="col-lg-2 col-md-2 col-sm-2 float">
+          <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+       </div>
+       <!--End Social-->
+      </div>
+     </header>
+    <!--End Header Section-->
+    <!--Banner Slider Start-->
+       <div class="bannerTop">
+        <div class="bannermain">
+          <div class="slider">
+           <div class="slide_viewer">
+             <div class="slide_group">             
+              <div class="container">
+              <div class="col-lg-6 col-md-6 col-sm-6 bannerL bannerslideT clearfix">
+               <h1>BLOGGING FOR YOUR BRAND</h1>
+               <h2 class="bannerTxt">Creating Quality Blog Content.</h2>
+               
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 bannerL clearfix"><img src="images/slide6.png" class="img-fluid"/></div>
+         </div>         
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+ <!--End Banner Slider-->
+   <!--Content Section-->
+       <div class="contentTop">
+        <div class="contentmain">
+         <div class="container">
+           <section>
+             <div class="bloghead"><h1>Blog Posts</h1></div>
+           </section>
+           <section>
+            <div class="row bloginnerMain clearfix">
+             <div class="col-lg-9 col-md-9 col-sm-9 float">
+             <!--Blog Post-->
+              <div class="row blog-classic">
+                <div class="col-lg-2 col-md-2">
+                 <div class="datepost">
+                   <div class="date">2</div>
+                   <div class="mnty">Dec 2017</div>
+                 </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                  <div class="post-box-bg">
+                    <div class="post-img"><img src="images/p12.jpg" class="img-fluid" alt=""/></div>
+                    <h4>How Many Ways to Develop UI/UX  From Your Desktop, Tablet, Mobile Device?</h4>
+                    <ul class="post-meta">
+                      <li><i class="fa fa-user"></i>posted by <a href="#">admin</a></li>
+                      <li><i class="fa fa-folder-open"></i>  <a href="#">Software</a>, <a href="#">technology</a>, <a href="#">digital marketing</a></li>
+                      <li><i class="fa fa-comments"></i>  <a href="#">4 comments</a></li>
+                    </ul>
+                    <p>Design a good UI and UX, it’s essential to think like a user. Consider how the user will look at the website, web app, or mobile app. Think about how to create the best design that makes everything easy to find and navigate. You don’t need to go with today’s latest design trends—stick with what works best for your user. Keep any requirements in mind, but balance that with what a user wants to see. And don’t be afraid to think outside of the box…</p>
+                  <div class="post-read"><a href="#" class="btn btn-dark">Continue Reading</a></div>  
+                  </div>
+                </div>
+              </div>
+              <!--End Blogpost-->
+              <!--Blog Post-->
+              <div class="row blog-classic">
+                <div class="col-lg-2 col-md-2">
+                 <div class="datepost">
+                   <div class="date">25</div>
+                   <div class="mnty">Nav 2017</div>
+                 </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                  <div class="post-box-bg">
+                    <div class="post-img"><img src="images/p22.jpg" class="img-fluid" alt=""/></div>
+                    <h4>How to Plan a Delightfully Romantic Honeymoon</h4>
+                    <ul class="post-meta">
+                      <li><i class="fa fa-user"></i>posted by <a href="#">admin</a></li>
+                      <li><i class="fa fa-folder-open"></i>  <a href="#">lifestyle</a>, <a href="#">travel</a>, <a href="#">fashion</a></li>
+                      <li><i class="fa fa-comments"></i>  <a href="#">3 comments</a></li>
+                    </ul>
+                    <p>Our 2016 post for “28 Eye-Popping Real Estate Marketing Statistics” is a popular post among Home Builders and Real Estate companies.  There is no doubt that internet marketing is necessary to attract home buyers and sellers. Here is an update to our previous post based on the most recently released stats.  The sources are referenced by number and listed at the end of the post to get the full report. Online Searches Today, nearly all generations of home buyers look at properties online first while buyers 71 years old and older are more likely to contact a…</p>
+                  <div class="post-read"><a href="#" class="btn btn-dark">Continue Reading</a></div>  
+                  </div>
+                </div>
+              </div>
+              <!--End Blogpost-->
+              <!--Blog Post-->
+              <div class="row blog-classic">
+                <div class="col-lg-2 col-md-2">
+                 <div class="datepost">
+                   <div class="date">15</div>
+                   <div class="mnty">Nav 2017</div>
+                 </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                  <div class="post-box-bg">
+                    <div class="post-img"><img src="images/p33.jpg" class="img-fluid" alt=""/></div>
+                    <h4>23 Mind Blowing Real Estate Marketing Statistics: 2017 Update</h4>
+                    <ul class="post-meta">
+                      <li><i class="fa fa-user"></i>posted by <a href="#">admin</a></li>
+                      <li><i class="fa fa-folder-open"></i>  <a href="#">lifestyle</a>, <a href="#">travel</a>, <a href="#">fashion</a></li>
+                      <li><i class="fa fa-comments"></i>  <a href="#">2 comments</a></li>
+                    </ul>
+                    <p>Our 2016 post for “28 Eye-Popping Real Estate Marketing Statistics” is a popular post among Home Builders and Real Estate companies.  There is no doubt that internet marketing is necessary to attract home buyers and sellers. Here is an update to our previous post based on the most recently released stats.  The sources are referenced by number and listed at the end of the post to get the full report. Online Searches Today, nearly all generations of home buyers look at properties online first while buyers 71 years old and older are more likely to contact a…</p>
+                  <div class="post-read"><a href="#" class="btn btn-dark">Continue Reading</a></div>  
+                  </div>
+                </div>
+              </div>
+              <!--End Blogpost-->
+              <!--Blog Post-->
+              <div class="row blog-classic">
+                <div class="col-lg-2 col-md-2">
+                 <div class="datepost">
+                   <div class="date">5</div>
+                   <div class="mnty">Nov 2017</div>
+                 </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                  <div class="post-box-bg">
+                    <div class="post-img"><img src="images/p44.jpg" class="img-fluid" alt=""/></div>
+                    <h4>Opinion: When Organic Vegetables Comes First</h4>
+                    <ul class="post-meta">
+                      <li><i class="fa fa-user"></i>posted by <a href="#">admin</a></li>
+                      <li><i class="fa fa-folder-open"></i>  <a href="#">agriculture</a>, <a href="#">farming</a>, <a href="#">crops</a></li>
+                      <li><i class="fa fa-comments"></i>  <a href="#">7 comments</a></li>
+                    </ul>
+                    <p>Organic food can simply be trusted more than conventional foods with chemical poisons sprayed all over them. Organic foods are FAR MORE REGULATED than conventional foods. The org industry requires a 3rd-party certification stamp that all rules are followed (on the fields and in the plants); this includes prohibiting synthetic chemicals ARE NOT USED! Farms are visited once a year, unannounced. There is no such system in place at all for growing and processing conventional foods. NONE. The USDA and FDA both allow conventional foods to have poisons on them, chemicals included like aspartame, GMO's, HFCS, etc to be included which results in the most unhealthy country in the world- the good ol' USA! Buy Organic it matter what goes into your body…</p>
+                  <div class="post-read"><a href="#" class="btn btn-dark">Continue Reading</a></div>  
+                  </div>
+                </div>
+              </div>
+              <!--End Blogpost-->
+              <!--Blog Post-->
+              <div class="row blog-classic">
+                <div class="col-lg-2 col-md-2">
+                 <div class="datepost">
+                   <div class="date">25</div>
+                   <div class="mnty">Oct 2017</div>
+                 </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                  <div class="post-box-bg">
+                    <div class="post-img"><img src="images/p55.jpg" class="img-fluid" alt=""/></div>
+                    <h4>What Should Programmers Call Themselves, Then?</h4>
+                    <ul class="post-meta">
+                      <li><i class="fa fa-user"></i>posted by <a href="#">admin</a></li>
+                      <li><i class="fa fa-folder-open"></i>  <a href="#">Software</a>, <a href="#">technology</a>, <a href="#">digital marketing</a></li>
+                      <li><i class="fa fa-comments"></i>  <a href="#">8 comments</a></li>
+                    </ul>
+                    <p>But wait John, I don’t just program computers!  I gather and analyze requirements, I design mock ups, write unit tests and I attend all kinds of meetings.  You may be a programmer, but as for me, I am a software developer.  Oh, and since I’ve been doing this for a while and I am awesome at it, I shall bestow upon myself the title of senior software engineer…</p>
+                  <div class="post-read"><a href="#" class="btn btn-dark">Continue Reading</a></div>  
+                  </div>
+                </div>
+              </div>
+              <!--End Blogpost-->
+              <!--pagination-->
+                            <div class="text-center">
+                                <ul class="pagination">
+                                    <li><a href="#">Prev</a>
+                                    </li>
+                                    <li class="active"><a href="#">1</a>
+                                    </li>
+                                    <li><a href="#">2</a>
+                                    </li>
+                                    <li><a href="#">3</a>
+                                    </li>
+                                    <li><a href="#">4</a>
+                                    </li>
+                                    <li><a href="#">5</a>
+                                    </li>
+                                    <li><a href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End pagination-->
+             </div>
+             <div class="col-lg-3 col-md-3 col-sm-3 float">
+              <section>
+               <div class="row">
+                <div class="post-rt-main">
+                  <!--Search Widget-->
+                    <div class="widget">
+                      <form>
+                           <div class="search-row">
+                            <button class="search-btn" type="submit" title="Search">
+                               <i class="fa fa-search"></i>
+                             </button>
+                             <input type="text" class="form-control" placeholder="Search...">
+                           </div>
+                       </form>
+                    </div>
+                  <!--End Searc Widget-->
+                </div>
+                <!--Latest Blog Post-->
+                  <div class="widget">
+                                <div class="heading-title-alt text-left heading-border-bottom">
+                                    <h6>latest post</h6>
+                                </div>
+                                <ul class="widget-latest-post">
+                                    <li>
+                                        <div class="thumb">
+                                            <a href="#">
+                                                <img src="images/post/post-thumb.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="w-desk">
+                                            <a href="#">How Many Ways to Develop UI/UX From Your Desktop, Tablet, Mobile Device?</a>
+                                            Dec 2, 2017
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb">
+                                            <a href="#">
+                                                <img src="images/post/post-thumb-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="w-desk">
+                                            <a href="#">How to Plan a Delightfully Romantic Honeymoon</a>
+                                            Nov 25, 2017
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb">
+                                            <a href="#">
+                                                <img src="images/post/post-thumb-3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="w-desk">
+                                            <a href="#">23 Mind Blowing Real Estate Marketing Statistics: 2017 Update</a>
+                                            Nov 15, 2017
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                <!--End Latest Blog Post-->
+                <!--Category Widget-->
+                  <div class="widget">
+                                <div class="heading-title-alt text-left heading-border-bottom">
+                                    <h6>category</h6>
+                                </div>
+                                <ul class="widget-category">
+                                    <li><a href="#">Software</a></li>
+                                    <li><a href="#">Technology</a></li>
+                                    <li><a href="#">Digital Marketing</a></li>
+                                    <li><a href="#">Travels</a></li>
+                                    <li><a href="#">Agriculture</a></li>
+                                    <li><a href="#">Lifestyle</a></li>
+                                    <li><a href="#">Entertainment</a></li>
+                                </ul>
+                            </div>
+                <!--End Category Widget-->
+                <!--News Latter Widget-->
+                  <div class="widget">
+                    <!--<div class="heading-title-alt text-left heading-border-bottom">
+                                    <h6>Subscribe Newsletter</h6>
+                                </div>-->
+                  </div>
+                <!--End News Latter-->
+               </div>
+              </section>
+             </div>
+             </div>
+           </section>
+         </div> 
+         </div>   
+       </div>
+    <!--End Content-->
+    <!--Footer Start -->
+    <div class="footerTop">
+     <div class="container">
+       <div class="col-lg-3 col-md-3 col-sm-3 float">
+         <div class="copyF"><p>© 2017 Jagarapu Srinivas</p></div>
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-6 float">
+         <div class="footerM">
+           <ul>
+             <li><a href="home.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="featured.html">Featured</a></li>
+             <li><a href="portfolio.html">Portfolio</a></li>
+             <li><a href="blog.html">Blog</a></li>
+             <li><a href="contact.html">Contact</a></li>
+           </ul>
+         </div>
+       </div>
+       <div class="col-lg-3 col-md-3 col-sm-3 float">
+         <div class="footerR">
+           <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+         </div>
+       </div>
+       <div class="cleras"></div>
+     </div>
+     <a href="#" class="scrollup" style="display: none;">Scroll</a>
+    </div>
+    <!--End Footer-->
+    <!-- Optional JavaScript -->
+    <!-- then Popper.js, then Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--End Bootstrap JS-->
+    <!--Toggle Nav-->
+    <script  src="js/togglenav.js"></script>
+    <!--End Toggle Nav-->
+    <!--Banner Slider-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  src="js/bannerslider.js"></script>
+    <!--End Banner Slider-->
+  </body>
+</html>

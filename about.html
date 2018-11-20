@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+  <head>
+    <title>UI Designer | UX Designer | UI Developer | Jagarapu Srinivas</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <!--End Bootstrap CSS-->
+    <!--Custome CSS-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--End Custome CSS-->
+    <!--JQuery Main-->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <!--End JQuery-->
+    <!--Fixed Header Animation-->
+    <script src="js/fixedheader.js"></script>
+      <script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+    <!--End Header Animation-->
+    <!--Scroll Top-->
+     <script type="text/javascript">
+			$(document).ready(function(){ 
+			
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			}); 
+			
+			$('.scrollup').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+ 
+		});
+		</script>
+    <!--End Scroll Top-->
+  </head>
+  <body>
+    <!--Header Section-->
+     <header>
+      <div class="container clearfix">
+       <!--Logo Section-->
+       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 float">
+         <a href="#"><div class="logo">
+         <h1>js</h1>
+          </div></a>
+       </div>
+       <!--End Logo-->
+       <!--Navigation Section-->
+       <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 float">
+         <nav>
+           <ul class="deskmenu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="featured.html">Featured</a></li>
+            <li><a href="digitalmarket.html">Digital Marketing</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           </ul>
+         </nav>
+         <div class="togglemenu">
+             <a href="#menu" id="toggle"><span></span></a>
+               <div id="menu">
+                 <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="featured.html">Featured</a></li>
+                    <li><a href="digitalmarket.html">Digital Marketing</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+           </div>
+         </div>
+       </div>
+       <!--End Navigation-->
+       <!--Socail Section-->
+       <div class="col-lg-2 col-md-2 col-sm-2 float">
+          <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+       </div>
+       <!--End Social-->
+      </div>
+     </header>
+    <!--End Header Section-->
+    <!--Banner Slider Start-->
+       <div class="bannerTop">
+        <div class="bannermain aboutB">
+          <div class="slider">
+           <div class="slide_viewer">
+             <div class="slide_group">             
+              <div class="container">
+               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bannerslideT">
+                 <h1>about me</h1>
+                 <h2>I'm a UX/UI Designer and UI Developer from Telangana and Andhra Pradesh, India.</h2>
+                 <p>I enjoy turning complex problems into simple, beautiful and intuitive interface designs. When I'm not coding or pushing pixels, you'll find me in the gym or on the court shooting hoops.</p>
+               </div>
+             </div>         
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+ <!--End Banner Slider-->
+   <!--Content Section-->
+       <div class="contentTop">
+        <div class="contentmain">
+          <div class="container clearfix">
+           <div class="col-lg-4 col-md-4 col-sm-4 float">
+            <div class="designpartH">
+              <h4>Part Designer</h4>
+               <ul>
+                <li>User Interface Design</li>
+                <li>User Experience Design</li>
+                <li>Interaction Design</li>
+                <li>Website Design</li>
+                <li>Branding / Logo Design</li>
+               </ul>
+            </div>
+           </div>
+           <div class="col-lg-4 col-md-4 col-sm-4 float">
+             <div><img src="images/pie-chart.png" class="img-fluid"/></div>
+           </div>
+           <div class="col-lg-4 col-md-4 col-sm-4 float">
+            <div class="coderpartH">
+              <h4>Part Coder</h4>
+               <ul>
+                <li>Front End Development</li>
+                <li>HTML/HTML5</li>
+                <li>CSS/CSS3/LESS/SASS</li>
+                <li>JavaScript/Jquery/Angular JS</li>
+                <li>Ajax/JSON/RESTful Web</li>
+               </ul>
+            </div>
+           </div>
+          </div>
+        </div> 
+        <div class="randommain">
+          <div class="container clearfix">
+            <div class="col-lg-6 col-md-6 col-sm-6 float">
+              <div><img src="images/ios.png" class="img-fluid"/></div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 float">
+             <div class="coderpartH">
+              <h4>Random Facts</h4>
+              <ul>
+                <li>I like village farms</li>
+                <li>I like to play Chess</li>
+                <li>I like to play vollyball</li>
+                <li>I love telugu music</li>
+                <li>I love comedy movies</li>
+               </ul>
+             </div>
+            </div>
+          </div>
+        </div> 
+        <div class="techskillmain">
+          <div class="container">
+            <h4>My Techinical Skills</h4>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#piechart').piechart({
+                        data: [
+                            native = [
+                                {cat: 'Languages', val: 0.1, label: "JAVA"},
+                                {cat: 'Languages', val: 0.1, label: ".NET"},
+                                {cat: 'Languages', val: 0.5, label: "PHP"},
+                                {cat: 'Native Programmiersprachen', val: 1.5, label: "Android"},
+                                {cat: 'Native Programmiersprachen', val: 1, label: "IOS"}
+                            ],
+
+                            cms = [
+                                {cat: 'Content Management Systeme', val: 4, label: "Wordpress"},
+                                {cat: 'Content Management Systeme', val: 0.5, label: "Joomla"},
+                                {cat: 'Content Management Systeme', val: 0.1, label: "Drupal"},
+                            ],
+
+                            web = [
+                                {cat: 'Web Development', val: 9, label: "HTML5"},
+                                {cat: 'Web Development', val: 2, label: "SCSS"},
+                                {cat: 'Web Development', val: 9, label: "CSS3"},
+                                {cat: 'Web Development', val: 9, label: "Bootstrap"},
+                                {cat: 'Web Development', val: 2, label: "LESS"},
+                                {cat: 'Web Development', val: 4, label: "Javascript"},
+                                {cat: 'Web Development', val: 4, label: "jQuery"},
+                                {cat: 'Web Development', val: 0.5, label: "PHP"},
+                                {cat: 'Web Development', val: 0.5, label: "MySQL"},
+                            ],
+
+                            sonstiges = [
+                                {cat: 'OS', val: 1, label: "Linux"},
+                                {cat: 'OS', val: 5, label: "Windows"},
+								{cat: 'OS', val: 7, label: "Photoshop"},
+								{cat: 'OS', val: 3, label: "illustrator"}
+                            ]
+                        ]
+                    });
+                });
+            </script>
+            <div id="piechart">
+
+            </div>
+          </div>
+        </div>
+       </div>
+    <!--End Content-->
+    <!--Footer Start -->
+    <div class="footerTop">
+     <div class="container">
+       <div class="col-lg-3 col-md-3 col-sm-3 float">
+         <div class="copyF"><p>© 2017 Jagarapu Srinivas</p></div>
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-6 float">
+         <div class="footerM">
+           <ul>
+             <li><a href="home.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="featured.html">Featured</a></li>
+             <li><a href="portfolio.html">Portfolio</a></li>
+             <li><a href="blog.html">Blog</a></li>
+             <li><a href="contact.html">Contact</a></li>
+           </ul>
+         </div>
+       </div>
+       <div class="col-lg-3 col-md-3 col-sm-3 float">
+         <div class="footerR">
+           <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+         </div>
+       </div>
+       <div class="cleras"></div>
+     </div>
+     <a href="#" class="scrollup" style="display: none;">Scroll</a>
+    </div>
+    <!--End Footer-->
+    <!-- Optional JavaScript -->
+    <!-- then Popper.js, then Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--End Bootstrap JS-->
+    <!--Toggle Nav-->
+    <script  src="js/togglenav.js"></script>
+    <!--End Toggle Nav-->
+    <!--Banner Slider-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  src="js/bannerslider.js"></script>
+    <!--End Banner Slider-->
+    <!--Pie Charts-->
+     <script src="js/piechart.min.js"></script>
+     <link rel="stylesheet" href="css/piechart.min.css"/>
+    <!--End Piecharts-->
+   
+  </body>
+</html>

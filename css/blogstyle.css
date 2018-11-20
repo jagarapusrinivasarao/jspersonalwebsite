@@ -1,0 +1,195 @@
+.bloghead{
+	}
+.bloghead h1{
+	font-family:"GOTHICB";
+	font-size:35px;
+	text-transform:uppercase;
+	color:#1b1b1b;
+	border-bottom:1px solid #1b1b1b;
+	
+	}
+.bloginnerMain{
+	margin-top:40px;
+	padding:0px 0px 0px 5px;
+	}
+.blog-classic {
+    margin-bottom:30px;
+    border-bottom: 1px solid #efefef;
+	padding-bottom:40px;
+}
+.datepost{
+	background:#1b1b1b;
+	padding:10px 0px;
+	text-align:center;
+	}
+.date{
+	color:#ffffff;
+	font-size:30px;
+	font-family:"GOTHICB";
+	}
+.mnty{
+	color:#ffffff;
+	font-family:"GOTHIC";
+	font-size:16px;
+	}
+.post-img{
+	margin-bottom:10px;
+	}
+.post-box-bg h4{
+	font-family:"GOTHICB";
+	font-size:20px;
+	color:#1b1b1b;
+	margin-bottom:10px;
+	}
+.post-meta{
+	margin-bottom:20px;
+    padding: 0;
+    list-style: none;
+	}
+.post-meta li {
+    display: inline-block;
+    margin-right: 10px;
+    text-transform: uppercase;
+    color: #a7a7a7;
+    font-size: 12px;
+}
+.post-meta li i {
+    padding-right: 10px;
+}
+.post-meta li a {
+    margin-right: 5px;
+    color: #a7a7a7;
+	text-decoration:none;
+}
+.post-box-bg p{
+	font-family:"GOTHIC";
+	font-size:16px;
+	text-align:justify;
+	color:#1b1b1b;
+	margin-bottom:10px;
+	padding-right:10px;
+	}
+.post-read a{
+	font-family:"GOTHIC";
+	font-size:16px;
+	color:#ffffff;
+	margin-top:10px;
+	}
+/*Pagination*/
+.pagination li{
+	background:#f8f8f8;
+	border:1px solid #d0cbcb;
+	margin-right:5px;
+	line-height:30px;
+	padding:0px 10px;
+	display:inline-block;
+
+	}
+.pagination li.active{
+	background:#1b1b1b;
+	}
+.pagination li.active a{
+	color:#fff;
+	}
+.pagination li a{
+	color:#1b1b1b;
+	text-decoration:none;
+	}
+/*End Pagenation*/
+.post-rt-main{
+	padding:0px;
+	margin:0px;
+	width:100%;
+	bor der-bottom:1px solid #a7a7a7;
+	}
+.widget{
+	display:inline-block;
+	width:100%;
+	margin-bottom:30px;
+	}
+.search-row {
+    position: relative;
+	width:100%;
+}
+.search-btn {
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    color: #ccc;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    line-height: 36px;
+}
+input[type="text"] {
+    wi dth:100% !important;
+    
+}
+.heading-border-bottom {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.heading-title-alt {
+    margin-bottom: 20px;
+}
+.text-left {
+    text-align: left;
+}
+.text-left h6{
+	font-size:20px;
+	color:#1b1b1b;
+	font-family:"GOTHICB";
+	text-transform:uppercase;
+	}
+.widget-latest-post, .widget-category, .widget-comments {
+    padding: 0;
+    list-style: none;
+}
+.widget-latest-post li, .widget-category li, .widget-comments li {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.widget-latest-post .thumb {
+    float: left;
+    width: 75px;
+    height: auto;
+    margin-right: 20px;
+}
+.widget-latest-post .w-desk {
+    display: inherit;
+    overflow: hidden;
+    color: #9b9a9a;
+	font-size:12px;
+}
+.widget-latest-post .w-desk a  {
+    display: block;
+    color: #333;
+    font-size:12px;
+	font-family:"GOTHIC";
+}
+.widget-category li a{
+	display: inherit;
+    overflow: hidden;
+    color: #9b9a9a;
+	font-size:16px;
+	font-family:"GOTHIC";
+	text-decoration:none;
+	text-transform:uppercase;
+	}
+.widget-category li a:hover{
+	color:#1b1b1b;
+	}
+@media screen and (max-width: 660px){
+	.pagination li{
+		margin:0px;
+		}
+		.post-rt-main{
+			margin-top:30px;
+			}
+	}

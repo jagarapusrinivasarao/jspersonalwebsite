@@ -1,0 +1,637 @@
+<!doctype html>
+<html>
+  <head>
+    <title>UI Designer | UX Designer | UI Developer | Jagarapu Srinivas</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <!--End Bootstrap CSS-->
+    <!--Custome CSS-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--End Custome CSS-->
+    <!--TabCSS-->
+      <link rel="stylesheet" href="css/jquery.tabpager.css"/>
+    <!--End TabCSS-->
+    <!--JQuery Main-->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <!--End JQuery-->
+    <!--Fixed Header Animation-->
+    <script src="js/fixedheader.js"></script>
+      <script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+    <!--End Header Animation-->
+    <!--Scroll Top-->
+     <script type="text/javascript">
+			$(document).ready(function(){ 
+			
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			}); 
+			
+			$('.scrollup').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+ 
+		});
+		</script>
+    <!--End Scroll Top-->
+  </head>
+  <body>
+    <!--Header Section-->
+     <header>
+      <div class="container clearfix">
+       <!--Logo Section-->
+       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 float">
+         <a href="#"><div class="logo">
+         <h1>js</h1>
+          </div></a>
+       </div>
+       <!--End Logo-->
+       <!--Navigation Section-->
+       <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 float">
+         <nav>
+           <ul class="deskmenu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="featured.html">Featured</a></li>
+            <li><a href="digitalmarket.html">Digital Marketing</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           </ul>
+         </nav>
+         <div class="togglemenu">
+             <a href="#menu" id="toggle"><span></span></a>
+               <div id="menu">
+                 <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="featured.html">Featured</a></li>
+                    <li><a href="digitalmarket.html">Digital Marketing</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+           </div>
+         </div>
+       </div>
+       <!--End Navigation-->
+       <!--Socail Section-->
+       <div class="col-lg-2 col-md-2 col-sm-2 float">
+          <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+       </div>
+       <!--End Social-->
+      </div>
+     </header>
+    <!--End Header Section-->
+    <!--Banner Slider Start-->
+       <div class="bannerTop">
+        <div class="bannermain portfolioB">
+          <div class="slider">
+           <div class="slide_viewer">
+             <div class="slide_group">             
+              <div class="container">
+               <div class="col-lg-6 col-md-6 col-sm-6 bannerL bannerslideT clearfix">
+               <h1 style="color:#ffffff;">PORTFOLIO</h1>
+               <h2 style="color:#ffffff;">Web Design, Mobile App Design, SEO, SMO and Digital Marketing Portfolio</h2>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 bannerL clearfix"><img src="images/slide4.png" class="img-fluid"/></div>
+         </div>         
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+ <!--End Banner Slider-->
+   <!--Content Section-->
+       <div class="contentTop">
+         <div class="container">
+           <div class="pageTab clearfix">
+             <ul id="tab">
+               <li><span class="active">ALL</span>/</li>
+               <li><span>WEB</span>/</li>
+               <li><span>MOBILE APPS</span>/</li>
+               <li><span>TV APPS</span>/</li>
+               <li><span>DIGITAL MARKETING</span>/</li>
+             </ul>
+           </div>
+           <div id="wrapper">
+           <div class="contents">
+           <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/brasilplay.png" />
+                    <div class="mask">
+                        <h2>Brasilplay TV</h2>
+                        <p>Brasilpay TV Provider of TV Globo International and Premiere Soccer in Europe and Australia.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Brasilplay TV</h4>
+                 <p>Website Design & Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/streamrepublic.png" />
+                    <div class="mask">
+                        <h2>Stream Republic</h2>
+                        <p>Stream Republic cloud OTT IPTV video platform,live streaming,encoding,software development of Smart TV,iOS,Android.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Stream Republic</h4>
+                 <p>Website Design & Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/apleaks.png" />
+                    <div class="mask">
+                        <h2>Ap Leaks</h2>
+                        <p>The fastest news</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Ap Leaks</h4>
+                 <p>Website Design & Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="cleras"></div>
+            </div>
+         <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/athena.png" />
+                    <div class="mask">
+                        <h2>Athena Global Technologies</h2>
+                        <p>Athena Global Technologies Limited is a global provider of outsourced offshore software development and testing services.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Athena Global Technologies</h4>
+                 <p>IOS App Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/uid.png" />
+                    <div class="mask">
+                        <h2>UID</h2>
+                        <p>We are United International Diagnostics. Serving Billion Lives through Healthcare Innovations.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>UID</h4>
+                 <p>Android App Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/savemyleg.png" />
+                    <div class="mask">
+                        <h2>Save My Leg</h2>
+                        <p>Researchers Now Have A Better Answer For Patients</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Save My Leg</h4>
+                 <p>Android App Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="cleras"></div>
+            </div>
+         <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/seo.png" />
+                    <div class="mask">
+                        <h2>Stream Republic</h2>
+                        <p>Stream Republic cloud OTT IPTV video platform,live streaming,encoding,software development of Smart TV,iOS,Android.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Stream Republic</h4>
+                 <p>SEO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/smo.png" />
+                    <div class="mask">
+                        <h2>Ap Leaks</h2>
+                        <p>The fastest news</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Ap Leaks</h4>
+                 <p>SMO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/digitalmarket.png" />
+                    <div class="mask">
+                        <h2>Brasilplay TV</h2>
+                        <p>Brasilpay TV Provider of TV Globo International and Premiere Soccer in Europe and Australia.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Brasilplay TV</h4>
+                 <p>Digital Marketing</p>
+                </div>
+              </div>
+            </div>
+            <div class="cleras"></div>
+            </div>
+            <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/brasilplay.png" />
+                    <div class="mask">
+                        <h2>Brasilplay TV</h2>
+                        <p>Brasilpay TV Provider of TV Globo International and Premiere Soccer in Europe and Australia.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Brasilplay TV</h4>
+                 <p>Website Design & Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/streamrepublic.png" />
+                    <div class="mask">
+                        <h2>Stream Republic</h2>
+                        <p>Stream Republic cloud OTT IPTV video platform,live streaming,encoding,software development of Smart TV,iOS,Android.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Stream Republic</h4>
+                 <p>Website Design & Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/apleaks.png" />
+                    <div class="mask">
+                        <h2>Ap Leaks</h2>
+                        <p>The fastest news</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Ap Leaks</h4>
+                 <p>Website Design & Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="cleras"></div>
+            </div>
+            </div>
+            <div class="contents">
+              <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/brasilplay.png" />
+                    <div class="mask">
+                        <h2>Brasilplay TV</h2>
+                        <p>Brasilpay TV Provider of TV Globo International and Premiere Soccer in Europe and Australia.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Brasilplay TV</h4>
+                 <p>Website Design & Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/streamrepublic.png" />
+                    <div class="mask">
+                        <h2>Stream Republic</h2>
+                        <p>Stream Republic cloud OTT IPTV video platform,live streaming,encoding,software development of Smart TV,iOS,Android.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Stream Republic</h4>
+                 <p>Website Design & Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/apleaks.png" />
+                    <div class="mask">
+                        <h2>Ap Leaks</h2>
+                        <p>The fastest news</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Ap Leaks</h4>
+                 <p>Website Design & Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="cleras"></div>
+            </div>
+            </div>
+            <div class="contents">
+              <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/athena.png" />
+                    <div class="mask">
+                        <h2>Athena Global Technologies</h2>
+                        <p>Athena Global Technologies Limited is a global provider of outsourced offshore software development and testing services.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Athena Global Technologies</h4>
+                 <p>IOS App Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/uid.png" />
+                    <div class="mask">
+                        <h2>UID</h2>
+                        <p>We are United International Diagnostics. Serving Billion Lives through Healthcare Innovations.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>UID</h4>
+                 <p>Android App Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/savemyleg.png" />
+                    <div class="mask">
+                        <h2>Save My Leg</h2>
+                        <p>Researchers Now Have A Better Answer For Patients</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Save My Leg</h4>
+                 <p>Android App Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="cleras"></div>
+            </div>
+            </div>
+            <div class="contents">
+              <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/brasilplay.png" />
+                    <div class="mask">
+                        <h2>Brasilplay TV</h2>
+                        <p>Brasilpay TV Provider of TV Globo International and Premiere Soccer in Europe and Australia.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Brasilplay TV</h4>
+                 <p>Website Design & Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/streamrepublic.png" />
+                    <div class="mask">
+                        <h2>Stream Republic</h2>
+                        <p>Stream Republic cloud OTT IPTV video platform,live streaming,encoding,software development of Smart TV,iOS,Android.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Stream Republic</h4>
+                 <p>Website Design & Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/apleaks.png" />
+                    <div class="mask">
+                        <h2>Ap Leaks</h2>
+                        <p>The fastest news</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Ap Leaks</h4>
+                 <p>Website Design & Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="cleras"></div>
+            </div>
+            </div>
+            <div class="contents">
+              <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/seo.png" />
+                    <div class="mask">
+                        <h2>Stream Republic</h2>
+                        <p>Stream Republic cloud OTT IPTV video platform,live streaming,encoding,software development of Smart TV,iOS,Android.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Stream Republic</h4>
+                 <p>SEO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/smo.png" />
+                    <div class="mask">
+                        <h2>Ap Leaks</h2>
+                        <p>The fastest news</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Ap Leaks</h4>
+                 <p>SMO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain pageG">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/digitalmarket.png" />
+                    <div class="mask">
+                        <h2>Brasilplay TV</h2>
+                        <p>Brasilpay TV Provider of TV Globo International and Premiere Soccer in Europe and Australia.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Brasilplay TV</h4>
+                 <p>Digital Marketing</p>
+                </div>
+              </div>
+            </div>
+            <div class="cleras"></div>
+            </div>
+            </div>
+            </div>
+         </div>
+        
+       </div>
+    <!--End Content-->
+    <!--Footer Start -->
+    <div class="footerTop">
+     <div class="container">
+       <div class="col-lg-3 col-md-3 col-sm-3 float">
+         <div class="copyF"><p>© 2017 Jagarapu Srinivas</p></div>
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-6 float">
+         <div class="footerM">
+           <ul>
+             <li><a href="home.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="featured.html">Featured</a></li>
+             <li><a href="portfolio.html">Portfolio</a></li>
+             <li><a href="blog.html">Blog</a></li>
+             <li><a href="contact.html">Contact</a></li>
+           </ul>
+         </div>
+       </div>
+       <div class="col-lg-3 col-md-3 col-sm-3 float">
+         <div class="footerR">
+           <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+         </div>
+       </div>
+       <div class="cleras"></div>
+     </div>
+     <a href="#" class="scrollup" style="display: none;">Scroll</a>
+    </div>
+    <!--End Footer-->
+    <!-- Optional JavaScript -->
+    <!-- then Popper.js, then Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--End Bootstrap JS-->
+    <!--Toggle Nav-->
+    <script  src="js/togglenav.js"></script>
+    <!--End Toggle Nav-->
+    <!--Banner Slider-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  src="js/bannerslider.js"></script>
+    <!--End Banner Slider-->
+    <!--Tabpage-->
+      <script src="js/jquery.tabpager.js"></script>
+      <script>
+      $(document).ready(function()
+      {
+        
+        $("#tab").tabpager({
+          items: 3,
+          contents: 'contents',
+          //time: 300,
+          previous: 'Previous',
+          next: 'Next',
+          //start: 1,
+          position: 'bottom',
+          //scroll: true
+        });
+      });
+    </script>
+    <!--EndTabpage-->
+  </body>
+</html>

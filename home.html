@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+  <head>
+    <title>UI Designer | UX Designer | UI Developer | Jagarapu Srinivas</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <!--End Bootstrap CSS-->
+    <!--Custome CSS-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--End Custome CSS-->
+    <!--JQuery Main-->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <!--End JQuery-->
+    <!--Fixed Header Animation-->
+    <script src="js/fixedheader.js"></script>
+      <script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+    <!--End Header Animation-->
+    <!--Scroll Top-->
+     <script type="text/javascript">
+			$(document).ready(function(){ 
+			
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			}); 
+			
+			$('.scrollup').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+ 
+		});
+		</script>
+    <!--End Scroll Top-->
+  </head>
+  <body>
+    <!--Header Section-->
+     <header>
+      <div class="container clearfix">
+       <!--Logo Section-->
+       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 float">
+         <a href="#"><div class="logo">
+         <h1>js</h1>
+          </div></a>
+       </div>
+       <!--End Logo-->
+       <!--Navigation Section-->
+       <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 float">
+         <nav>
+           <ul class="deskmenu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="featured.html">Featured</a></li>
+            <li><a href="digitalmarket.html">Digital Marketing</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           </ul>
+         </nav>
+         <div class="togglemenu">
+             <a href="#menu" id="toggle"><span></span></a>
+               <div id="menu">
+                 <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="featured.html">Featured</a></li>
+                    <li><a href="digitalmarket.html">Digital Marketing</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+           </div>
+         </div>
+       </div>
+       <!--End Navigation-->
+       <!--Socail Section-->
+       <div class="col-lg-2 col-md-2 col-sm-2 float">
+          <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+       </div>
+       <!--End Social-->
+      </div>
+     </header>
+    <!--End Header Section-->
+    <!--Banner Slider Start-->
+       <div class="bannerTop">
+        <div class="bannermain">
+          <div class="slider">
+           <div class="slide_viewer">
+             <div class="slide_group">
+               <div class="slide">
+               </div>
+            <div class="slide">
+             <div class="container">
+               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                 <h1>about me</h1>
+                 <h2>I'm a UX/UI Designer and UI Developer from Telangana and Andhra Pradesh, India.</h2>
+                 <p>I enjoy turning complex problems into simple, beautiful and intuitive interface designs. When I'm not coding or pushing pixels, you'll find me in the gym or on the court shooting hoops.</p>
+               </div>
+             </div>
+           </div>
+          <div class="slide">
+           <div class="container">
+             <div class="col-lg-6 col-md-6 col-sm-6 bannerL clearfix">
+               <h1>Featured in</h1>
+               <h2 class="bannerTxt">I've been lucky enough to be featured in some great works.</h2>
+               <p class="bannerTxt">Website Design:Brasilpaly TV, Stream Republic, AP Leaks and Mobile App:Athena to name a few.</p>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 bannerL clearfix"><img src="images/slide3.png" class="img-fluid"/></div>
+           </div>
+          </div>
+        <div class="slide">
+         <div class="container">
+          <div class="col-lg-6 col-md-6 col-sm-6 bannerL clearfix">
+               <h1 style="color:#ffffff;">PORTFOLIO</h1>
+               <h2 style="color:#ffffff;">Web Design, Mobile App Design, SEO, SMO and Digital Marketing Portfolio</h2>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 bannerL clearfix"><img src="images/slide4.png" class="img-fluid"/></div>
+         </div>
+       </div>
+       <div class="slide">
+         <div class="container">
+          <div class="col-lg-6 col-md-6 col-sm-6 bannerL clearfix">
+               <h1>CONTACT ME</h1>
+               <h2 class="bannerTxt">Follow Insight on Social Media to keep up-to-date with the latest Work news.</h2>
+               <div class="bannerTxt bface"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i>Like me on Facebook</a></div>
+               <div class="bannerTxt btwit"><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i>Follow me on Twitter</a></div>
+               <div class="bannerTxt blink"><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i>Connect on LinkedIn</a></div>
+               <div class="bannerTxt byoutub"><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i>Subscribe on Youtube</a></div>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 bannerL clearfix"><img src="images/slide5.png" class="img-fluid"/></div>
+         </div>
+       </div>
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+<!--Slider nav and arrow Buttons-->
+<div class="slide_buttons">
+</div>
+<div class="directional_nav">
+  <div class="previous_btn" title="Previous">
+    <svg version="1.1"  x="0px" y="0px" viewBox="-11 -11.5 65 66">
+      <g>
+        <g>
+          <path fill="#474544" d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
+			c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z"/>
+          <path fill="#474544" d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0	c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564	c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="next_btn" title="Next">
+    <svg version="1.1"  x="0px" y="0px" viewBox="-11 -11.5 65 66">
+      <g>
+        <g>
+          <path fill="#474544" d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5	c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288	c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z"/>
+          <path fill="#474544" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 			L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+<!--End Arrow-->
+ <!--End Banner Slider-->
+   <!--Content Section-->
+       <div class="contentTop">
+        <div class="container">
+         <div class="websiteworkmain">
+           <h3><span>SOME OF MY LATEST WEBSITE DEVELOPMENT WORK</span></h3>
+         </div>
+           <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/brasilplay.png" />
+                    <div class="mask">
+                        <h2>Brasilplay TV</h2>
+                        <p>Brasilpay TV Provider of TV Globo International and Premiere Soccer in Europe and Australia.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Brasilplay TV</h4>
+                 <p>Website Design & Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/streamrepublic.png" />
+                    <div class="mask">
+                        <h2>Stream Republic</h2>
+                        <p>Stream Republic cloud OTT IPTV video platform,live streaming,encoding,software development of Smart TV,iOS,Android.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Stream Republic</h4>
+                 <p>Website Design & Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/apleaks.png" />
+                    <div class="mask">
+                        <h2>Ap Leaks</h2>
+                        <p>The fastest news</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Ap Leaks</h4>
+                 <p>Website Design & Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="cleras"></div>
+            </div>
+            <div class="websiteworkmain">
+           <h3><span>SOME OF MY LATEST ANDROID/IOS WORK</span></h3>
+         </div>
+         <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/athena.png" />
+                    <div class="mask">
+                        <h2>Athena Global Technologies</h2>
+                        <p>Athena Global Technologies Limited is a global provider of outsourced offshore software development and testing services.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Athena Global Technologies</h4>
+                 <p>IOS App Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/uid.png" />
+                    <div class="mask">
+                        <h2>UID</h2>
+                        <p>We are United International Diagnostics. Serving Billion Lives through Healthcare Innovations.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>UID</h4>
+                 <p>Android App Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/savemyleg.png" />
+                    <div class="mask">
+                        <h2>Save My Leg</h2>
+                        <p>Researchers Now Have A Better Answer For Patients</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Save My Leg</h4>
+                 <p>Android App Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="cleras"></div>
+            </div>
+         <div class="websiteworkmain">
+           <h3><span>SOME OF MY LATEST DIGITAL MARKETING WORK</span></h3>
+         </div>
+         <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/seo.png" />
+                    <div class="mask">
+                        <h2>Stream Republic</h2>
+                        <p>Stream Republic cloud OTT IPTV video platform,live streaming,encoding,software development of Smart TV,iOS,Android.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Stream Republic</h4>
+                 <p>SEO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/smo.png" />
+                    <div class="mask">
+                        <h2>Ap Leaks</h2>
+                        <p>The fastest news</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Ap Leaks</h4>
+                 <p>SMO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 float">
+              <div class="boxmain">
+                <div class="boxinnermain view view-tenth">
+                  <img src="images/digitalmarket.png" />
+                    <div class="mask">
+                        <h2>Brasilplay TV</h2>
+                        <p>Brasilpay TV Provider of TV Globo International and Premiere Soccer in Europe and Australia.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+                <div class="boxinnerhead">
+                 <h4>Brasilplay TV</h4>
+                 <p>Digital Marketing</p>
+                </div>
+              </div>
+            </div>
+            <div class="cleras"></div>
+            </div>
+         </div>
+       </div>
+    <!--End Content-->
+    <!--Footer Start -->
+    <div class="footerTop">
+     <div class="container">
+       <div class="col-lg-3 col-md-3 col-sm-3 float">
+         <div class="copyF"><p>© 2017 Jagarapu Srinivas</p></div>
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-6 float">
+         <div class="footerM">
+           <ul>
+             <li><a href="home.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="featured.html">Featured</a></li>
+             <li><a href="portfolio.html">Portfolio</a></li>
+             <li><a href="blog.html">Blog</a></li>
+             <li><a href="contact.html">Contact</a></li>
+           </ul>
+         </div>
+       </div>
+       <div class="col-lg-3 col-md-3 col-sm-3 float">
+         <div class="footerR">
+           <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+         </div>
+       </div>
+       <div class="cleras"></div>
+     </div>
+     <a href="#" class="scrollup" style="display: none;">Scroll</a>
+    </div>
+    <!--End Footer-->
+    <!-- Optional JavaScript -->
+    <!-- then Popper.js, then Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--End Bootstrap JS-->
+    <!--Toggle Nav-->
+    <script  src="js/togglenav.js"></script>
+    <!--End Toggle Nav-->
+    <!--Banner Slider-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  src="js/bannerslider.js"></script>
+    <!--End Banner Slider-->
+    <!--Tawk-->
+      <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/584ffe56f9976a1964d279bd/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+    <!--End Tawk-->
+  </body>
+</html>

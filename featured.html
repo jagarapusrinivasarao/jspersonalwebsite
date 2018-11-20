@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+  <head>
+    <title>UI Designer | UX Designer | UI Developer | Jagarapu Srinivas</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <!--End Bootstrap CSS-->
+    <!--Custome CSS-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--End Custome CSS-->
+    <!--JQuery Main-->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <!--End JQuery-->
+    <!--Fixed Header Animation-->
+    <script src="js/fixedheader.js"></script>
+      <script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+    <!--End Header Animation-->
+    <!--Scroll Top-->
+     <script type="text/javascript">
+			$(document).ready(function(){ 
+			
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			}); 
+			
+			$('.scrollup').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+ 
+		});
+		</script>
+    <!--End Scroll Top-->
+  </head>
+  <body>
+    <!--Header Section-->
+     <header>
+      <div class="container clearfix">
+       <!--Logo Section-->
+       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 float">
+         <a href="#"><div class="logo">
+         <h1>js</h1>
+          </div></a>
+       </div>
+       <!--End Logo-->
+       <!--Navigation Section-->
+       <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 float">
+         <nav>
+           <ul class="deskmenu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="featured.html">Featured</a></li>
+            <li><a href="digitalmarket.html">Digital Marketing</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           </ul>
+         </nav>
+         <div class="togglemenu">
+             <a href="#menu" id="toggle"><span></span></a>
+               <div id="menu">
+                 <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="featured.html">Featured</a></li>
+                    <li><a href="digitalmarket.html">Digital Marketing</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+           </div>
+         </div>
+       </div>
+       <!--End Navigation-->
+       <!--Socail Section-->
+       <div class="col-lg-2 col-md-2 col-sm-2 float">
+          <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+       </div>
+       <!--End Social-->
+      </div>
+     </header>
+    <!--End Header Section-->
+    <!--Banner Slider Start-->
+       <div class="bannerTop">
+        <div class="bannermain">
+          <div class="slider">
+           <div class="slide_viewer">
+             <div class="slide_group">             
+              <div class="container">
+              <div class="col-lg-6 col-md-6 col-sm-6 bannerL bannerslideT clearfix">
+               <h1>Featured in</h1>
+               <h2 class="bannerTxt">I've been lucky enough to be featured in some great works.</h2>
+               <p class="bannerTxt">Website Design:Brasilpaly TV, Stream Republic, AP Leaks and Mobile App:Athena to name a few.</p>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 bannerL clearfix"><img src="images/slide3.png" class="img-fluid"/></div>
+           </div>         
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+ <!--End Banner Slider--> 
+   <!--Content Section-->
+       <div class="contentTop">
+         <div class="contentmain">
+          <div class="container clearfix">
+            <div class="col-lg-6 col-md-6 col-sm-6 float"><img src="images/feature-d.png" class="img-fluid" alt="Feature Project"/></div>
+            <div class="col-lg-6 col-md-6 col-sm-6 float">
+              <div class="featureL">
+               <h4>Athena Website Development</h4>
+               <p>"When it comes to contrast in minimalist web design, one good example is the portfolio website of Srinivas Jagarapu. On this Multiple pages, we have all kinds of contrast happening simultaneously."</p>
+              </div>
+            </div>
+          </div>
+         </div>
+         <div class="randommain">
+          <div class="container clearfix">
+            <div class="col-lg-6 col-md-6 col-sm-6 float">
+              <div class="featureL">
+                <h4>Mobile App Design</h4>
+                <p>"When it comes to contrast in minimalist Mobile Development, one good example is the portfolio website of Srinivas Jagarapu. On this Multiple Mockps Design, we have all kinds of contrast happening simultaneously."</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 float">
+             <div class="featureM"><img src="images/feature-m.png" class="img-fluid" alt="Mobile App Design"/></div>
+            </div>
+          </div>
+        </div>
+        
+       </div>
+    <!--End Content-->
+    <!--Footer Start -->
+    <div class="footerTop">
+     <div class="container">
+       <div class="col-lg-3 col-md-3 col-sm-3 float">
+         <div class="copyF"><p>© 2017 Jagarapu Srinivas</p></div>
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-6 float">
+         <div class="footerM">
+           <ul>
+             <li><a href="home.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="featured.html">Featured</a></li>
+             <li><a href="portfolio.html">Portfolio</a></li>
+             <li><a href="blog.html">Blog</a></li>
+             <li><a href="contact.html">Contact</a></li>
+           </ul>
+         </div>
+       </div>
+       <div class="col-lg-3 col-md-3 col-sm-3 float">
+         <div class="footerR">
+           <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+         </div>
+       </div>
+       <div class="cleras"></div>
+     </div>
+     <a href="#" class="scrollup" style="display: none;">Scroll</a>
+    </div>
+    <!--End Footer-->
+    <!-- Optional JavaScript -->
+    <!-- then Popper.js, then Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--End Bootstrap JS-->
+    <!--Toggle Nav-->
+    <script  src="js/togglenav.js"></script>
+    <!--End Toggle Nav-->
+    <!--Banner Slider-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  src="js/bannerslider.js"></script>
+    <!--End Banner Slider-->
+  </body>
+</html>
